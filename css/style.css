@@ -1,0 +1,120 @@
+:root{
+    --primary-dark: #303030;
+    --secondary-dark: #bb8866;
+    --secondary-light: #eeaa88;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.card{
+    margin-top: 1rem;
+    background-color: #ffffff;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px var(--secondary-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.card__title{
+    font-size: 2.4rem;
+    color: var(--primary-dark);
+    font-weight: 900;
+}
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    
+    gap: .5rem;
+    width: 80%;
+
+    font-size: 1.2rem;
+}
+
+#textarea{
+    padding: .8rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#selector{
+    padding: .8rem;
+    font-size: 1rem;
+    cursor: pointer
+}
+
+#button{
+    background-color: var(--secondary-light);
+    color: #fff;
+    border-radius: .3rem;
+    padding: .8rem;
+    border: none;
+    max-width: 100%;
+    display: block;
+    font-size: 1.2rem;
+    cursor: pointer
+}
+
+#button{
+    background-color: var(--secondary-dark);
+}
+
+/* Footer */
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.footer__container{
+    font-size: 1rem;
+    color: black;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__text{
+    margin: 0 5px; 
+    width: auto;
+}
+
+
+.footer__link{
+    color: var(--secondary-light);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Clicker script', cursive;
+    font-size: 1.2rem;  
+}
+
+.footer__link:hover{
+    color: var(--secondary-dark);
+}
